@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+contracts/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+CLAUDE.md 
+DEMO_SCRIPT.md 
+PPT_CONTENT.md
+
+# Build outputs
+frontend/.next/
+frontend/out/
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+
+# Runtime data
+backend/filecoin_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+CLAUDE.md
+DEMO_SCRIPT.md
+PPT_CONTENT.md

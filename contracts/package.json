@@ -1,0 +1,15 @@
+{
+  "name": "agentforge-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network baseSepolia"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  }
+}

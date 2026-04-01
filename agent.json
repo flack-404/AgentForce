@@ -1,0 +1,126 @@
+{
+    "name": "AgentForge",
+    "version": "1.0.0",
+    "description": "Autonomous multi-agent swarm with ERC-8004 trust-gated collaboration",
+    "operator": {
+        "wallet": "0x0000000000000000000000000000000000000000",
+        "name": "AgentForge Team"
+    },
+    "agents": [
+        {
+            "name": "AgentForge-Planner",
+            "role": "planner",
+            "erc8004_identity": "15ccf100-9d6a-4277-9cdd-41d41d024220",
+            "supported_tools": [
+                "groq_llm",
+                "task_queue",
+                "trust_evaluator",
+                "budget_manager"
+            ],
+            "supported_tech_stacks": [
+                "python",
+                "javascript"
+            ],
+            "compute_constraints": {
+                "max_tokens_per_task": 100000,
+                "max_api_calls_per_task": 50,
+                "max_cost_per_task_usd": 10.0
+            },
+            "supported_task_categories": [
+                "problem_discovery",
+                "task_decomposition",
+                "strategic_planning",
+                "coordination"
+            ]
+        },
+        {
+            "name": "AgentForge-Developer",
+            "role": "developer",
+            "erc8004_identity": "0543d83b-d4c7-4384-aa47-2da9760eb6a7",
+            "supported_tools": [
+                "groq_llm",
+                "code_generation",
+                "code_sandbox",
+                "github_api"
+            ],
+            "supported_tech_stacks": [
+                "python",
+                "typescript",
+                "solidity",
+                "react"
+            ],
+            "compute_constraints": {
+                "max_tokens_per_task": 200000,
+                "max_api_calls_per_task": 100,
+                "max_cost_per_task_usd": 20.0
+            },
+            "supported_task_categories": [
+                "code_generation",
+                "code_modification",
+                "repository_management",
+                "dependency_management"
+            ]
+        },
+        {
+            "name": "AgentForge-QA",
+            "role": "qa",
+            "erc8004_identity": "6b08149b-5d08-465f-89d5-5eaffa96510d",
+            "supported_tools": [
+                "groq_llm",
+                "code_review",
+                "static_analysis",
+                "test_runner"
+            ],
+            "supported_tech_stacks": [
+                "python",
+                "typescript",
+                "solidity"
+            ],
+            "compute_constraints": {
+                "max_tokens_per_task": 100000,
+                "max_api_calls_per_task": 50,
+                "max_cost_per_task_usd": 10.0
+            },
+            "supported_task_categories": [
+                "code_review",
+                "testing",
+                "security_audit",
+                "validation"
+            ]
+        },
+        {
+            "name": "AgentForge-Deployer",
+            "role": "deployer",
+            "erc8004_identity": "a6ca7afe-7129-4a53-a719-e25300630ed9",
+            "supported_tools": [
+                "groq_llm",
+                "deployment_api",
+                "health_checker",
+                "documentation_generator"
+            ],
+            "supported_tech_stacks": [
+                "vercel",
+                "hardhat",
+                "docker"
+            ],
+            "compute_constraints": {
+                "max_tokens_per_task": 100000,
+                "max_api_calls_per_task": 50,
+                "max_cost_per_task_usd": 10.0
+            },
+            "supported_task_categories": [
+                "cloud_deployment",
+                "smart_contract_deployment",
+                "health_verification",
+                "submission"
+            ]
+        }
+    ],
+    "swarm_config": {
+        "coordination_protocol": "trust_gated_delegation",
+        "min_trust_threshold": 60,
+        "max_retry_cycles": 3,
+        "escalation_policy": "planner_then_human",
+        "total_compute_budget_usd": 50.0
+    }
+}
