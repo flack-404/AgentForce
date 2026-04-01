@@ -1,6 +1,6 @@
 # AgentForge — Autonomous Multi-Agent Swarm
 
-An autonomous multi-agent system where AI agents collaborate through trust-gated delegation, with on-chain identity and reputation via ERC-8004. Agents discover tasks, decompose them, write code, review each other's work, and deploy — all with real LLM reasoning and verifiable execution logs.
+An autonomous multi-agent system where AI agents collaborate through trust-gated delegation, with on-chain identity and reputation via ERC-8004. Agents discover tasks, decompose them, write code, review each other's work, and deploy all with real LLM reasoning and verifiable execution logs.
 
 ## Problem
 
